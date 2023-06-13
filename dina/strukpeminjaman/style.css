@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Work+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: 'Roboto Slab', serif;
+}
+
+p{
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: url('Images/buku.jpg');
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-top: 25vh;
+}
+
+header {
+  background-color: darkcyan;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+navbar {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  background-color: #555;
+  color: #fff;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+navbar li {
+  margin: 10px 0;
+}
+
+navbar a {
+  color: #fff;
+  margin-right: 10px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+navbar a:hover {
+  background-color:#39B5E0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+navbar a {
+  text-decoration: none;
+  color: inherit;
+  flex-direction: column;
+  
+}
+
+main {
+  margin: 20px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+section div {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 15px;
+  background: #009973;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor:pointer;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+button :hover{
+  opacity:0.9;
+}
+
+footer {
+  background-color: #555;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  section div {
+    width: 90%;
+  }
+}
+
+#logo{
+    width: 100%;
+    margin:auto;
+    padding:auto;
+    padding-bottom: 20px;
+}
+
+#container{
+    width: 360px;
+    background: white;
+    margin:180px auto;
+    padding: 30px 20px;
+    border-radius: 6px;
+}
+
+input[type=text],
+input[type=tel],
+input[type=date]{
+    font-size: 15px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-size: 30px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border-radius: 5px;
+}
+
+#nama{
+    background-image: url('Icon/user.png');
+}
+#address{
+    background-image: url('Icon/pin.png');
+}
+#nomor{
+    background-image: url('Icon/phone-call.png');
+}
+        
+input[type=text]:focus,
+input[type=password]:focus {
+    border: 2px solid #555;
+}
+
+input[type=submit]{
+    font-size: 15px;
+    background: #009973;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor:pointer;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover{
+    opacity:0.9;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: -10vh;
+}
+
+.bukti-peminjaman {
+  border: 1px solid black; /* tambahkan border */
+  height: 50vh;
+  margin: 20px; /* atur margin */
+  padding: 20px; /* atur padding */
+  text-align: center; /* mengatur teks menjadi di tengah */
+  width: 400px; /* atur lebar kotak */
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+
+.bukti-peminjaman h1{
+  margin-bottom: 5vh;
+}
+
+.bukti-peminjaman p{
+  margin-bottom: 7vh;
+  text-align: left;
+  
+}

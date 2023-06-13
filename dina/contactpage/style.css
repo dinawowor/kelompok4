@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Work+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: 'Roboto Slab', serif;
+}
+
+p{
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  background: url('image/buku.jpg');
+  background-size: auto;
+  backdrop-filter: blur(3px);
+  /* -webkit-filter: blur(10px); */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: darkcyan;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #555;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 10px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color:#39B5E0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+footer {
+    background-color: #555;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+main {
+  margin: 20px;
+  min-height: 10vh;
+  width: 100%;
+  background: url('Images/buku.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+    width: 80%;
+    height: 70vh;
+    background: rgb(184, 184, 184);
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    margin-left: 15vh;
+  }
+  .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  .container .content .left-side{
+    font-size: 1px;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  .content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(3, 3, 50);
+  }
+  .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .content .left-side .details i{
+    font-size: 30px;
+    color: rgb(0, 255, 102);
+    margin-bottom: 10px;
+  }
+  .content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 25px;
+    color: rgb(3, 3, 50);
+  }
+  .container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+  }
+  .content .right-side .topic-text{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(3, 3, 50);
+  }
+  .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .right-side .message-box{
+    min-height: 110px;
+  }
+  .right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background: rgb(3, 3, 50);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button input[type="button"]:hover{
+    background: rgb(3, 3, 100);
+  }
+  
+  @media (max-width: 950px) {
+    .container{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+    .container .content .right-side{
+     width: 75%;
+     margin-left: 55px;
+  }
+  }
+  @media (max-width: 820px) {
+    .container{
+      margin: 40px 0;
+      height: 100%;
+    }
+    .container .content{
+      flex-direction: column-reverse;
+    }
+   .container .content .left-side{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .container .content .left-side::before{
+     display: none;
+   }
+   .container .content .right-side{
+     width: 100%;
+     margin-left: 0;
+   }
+  
+   
+  }
+  
+  /* ini pencetan sendnya */
+  
+  .pencet {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pct {
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background: rgb(3, 3, 50);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  .pct:hover{
+    background: rgb(3, 3, 100);
+  }
+  
+  
+  
+  .okpct:hover{
+    background: rgb(3, 3, 100);
+  }
+  
+  .popup {
+    width: 400px;
+    border-radius: 6px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+  
+  .open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px;
+  }
+  
+  .popup h2{
+    font-size: 40px;
+    font-weight:  500;
+    margin: 30px 0 10px;
+  }
+  
+  .popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: rgb(3, 3, 50);
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(3, 3, 50);
+  }
+  
+  a:hover {
+    color: #fff;
+    transition: all 0.4s ease-out;
+  }
+  
+  .topic {
+    font-size: 500px;
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+    /* Adjust font size for small screens */
+    body {
+      font-size: 14px;
+    }
+  }  
+  @media screen and (min-width: 768px) {
+    .col {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+

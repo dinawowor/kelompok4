@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header .log-out {
+    text-align: left;
+    position: relative;
+  
+  }
+  
+  header .log-out a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  header .log-out a {
+    color: #fff;
+    margin-right: 10px;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  header .log-out a:hover {
+    background-color:#39B5E0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  
+  header .log-out a {
+    text-decoration: none;
+    color: inherit;
+    flex-direction: column;
+    
+  }
+  
+  header .log-out a:hover {
+    background-color:#39B5E0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  
+  navbar {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: #555;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2vh;
+  }
+  
+  navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  navbar li {
+    margin: 10px 0;
+  }
+  
+  navbar a {
+    color: #fff;
+    margin-right: 10px;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  navbar a:hover {
+    background-color:#39B5E0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  
+  navbar a {
+    text-decoration: none;
+    color: inherit;
+    flex-direction: column;
+    
+  }
+  
+  navbar a:hover {
+    background-color:#39B5E0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
